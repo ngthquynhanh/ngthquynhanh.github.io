@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TITLE SECTION -->
+    <section id="title">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="https://vn.elsaspeak.com/">
+                    <img class="logo" src="https://vn.elsaspeak.com/wp-content/themes/theme_download/images/logo.png" alt="elsa-logo">
+                </a>
+            </nav>
+
+            <!-- Title -->
+            <div class="row heading">
+                <div class="col-lg-7 box-title">
+                    <h1 class="big-heading">APP LUYỆN NÓI & GIAO TIẾP TIẾNG ANH THỜI 4.0</h1>
+                    <p class="title-text">Với Elsa Speak - Ai Cũng Có Thể Nói Tiếng Anh Hay!</p>
+                    <button class="button btn-lg"><a class="button-link" href="#sign-up">Đăng ký ngay</a></button>
+                </div>
+                
+                <div class="col-lg-5">
+                    <img class="title-image" src="image/mockup.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGN UP SECTION  -->
+    <section id="sign-up">
+        <div class="container-fluid">
+            <div class="row g-5">
+                <!-- Sign Up Form -->
+                <div class="col-lg-6 col-md-12 sign-up-contain">
+                    <div class="sign-up-form"> 
+                        <div class="sign-up-heading">
+                            <h2 class="sign-up-title">CÙNG ỨNG DỤNG ELSA NÓI TIẾNG ANH "THẢ GA"</h2>
+                        </div>
+
+                        <div class="card-body">
+                            <form class="form-field" action="">
+                                <div class="row g-3">
+                                    <div class="col-lg-12">
+                                        <label for="name" class="form-label form-text"><i class="far fa-user"></i> Họ tên*</label>
+                                        <input type="text" class="form-control" id="name" placeholder value required>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="phone" class="form-label form-text"><i class="fas fa-phone-alt"></i> Số điện thoại*</label>
+                                        <input type="tel" name="" id="phone" class="form-control" onblur="errorPhone()" required>
+                                        <div id="validate-phone"></div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="email" class="form-label form-text"><i class="far fa-envelope"></i> Email*</label>
+                                        <input type="email" name="" id="email" class="form-control" onblur="errorEmail()" required>
+                                        <div id="validate-email"></div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <input type="checkbox" class="form-check-input" id="ayear" onclick="price1()">
+                                        <label for="ayear" class="form-check-label">Gói học 1 năm</label>
+                                        <div class="price-checkbox1"></div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <input type="checkbox" class="form-check-input" id="years" onclick="price2()">
+                                        <label for="years" class="form-check-label">Gói trọn đời</label>
+                                        <div class="price-checkbox2"></div>
+                                    </div>
+                                    <div id="validation"></div>
+                                </div>
+                                <button class="w-100 btn-lg button button-form" onclick="validate()">GỬI ĐĂNG KÝ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="col-lg-6 col-md-12">
+                    <img class="position-relative image-form" src="image/image-sign-up.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="features">
+        <h2 class="features-heading">CÁ NHÂN HÓA LỘ TRÌNH HỌC</h2>
+        <p>Làm bài kiểm tra đầu vào với ELSA trong 5 phút và bạn sẽ có:</p>
+
+        <div class="row feature-row">
+            <div class="col-lg-3 col-md-6">
+                <img src="https://vn.elsaspeak.com/wp-content/webp-express/webp-images/doc-root/wp-content/themes/theme_two_years/images/section-02-1.png.webp" alt="">
+                <p class="features-text">
+                    Trí tuệ nhân tạo trả về bạn số điểm <strong class="features-strong">"CHUẨN BẢN XỨ"</strong>
+                </p>       
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <img src="https://vn.elsaspeak.com/wp-content/webp-express/webp-images/doc-root/wp-content/themes/theme_two_years/images/section-02-2.png.webp" alt="">
+                <p class="features-text">
+                    <strong class="features-strong">NGAY LẬP TỨC</strong>, bạn biết mình phát âm sai ở đâu qua những gam màu trực quan sinh động
+                </p>  
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <img src="https://vn.elsaspeak.com/wp-content/webp-express/webp-images/doc-root/wp-content/themes/theme_two_years/images/section-02-3.png.webp" alt="">
+                <p class="features-text"><strong class="features-strong">
+                    CÔNG NGHỆ NHẬN DIỆN</strong> giọng nói chuẩn đến từng âm tiết
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <img src="https://vn.elsaspeak.com/wp-content/webp-express/webp-images/doc-root/wp-content/themes/theme_two_years/images/section-02-4.png.webp" alt="">
+                <p class="features-text">ELSA sẽ <strong class="features-strong">
+                    LẬP LỘ TRÌNH HỌC CÁ NHÂN HÓA</strong> dựa trên các chỉ số bài kiểm tra đầu vào của bạn
+                </p>   
+            </div>
+        </div>
+        <div>
+            <button class="features-button btn-lg">ĐĂNG KÝ NGAY</button>
+        </div>
+    </section>
+    
+    <script src="index.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
